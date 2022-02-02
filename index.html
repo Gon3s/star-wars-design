@@ -38,17 +38,49 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="left">
+            <div class="logos">
+                <img class="active" data-episode="4" src="assets/Resistance.svg" alt="Resistance logo" />
+                <img data-episode="5" src="assets/Empire.svg" alt="Empire logo" />
+                <img data-episode="6" src="assets/Jedi.svg" alt="Jedi logo" />
+            </div>
+            <div class="titles">
+                <span data-episode="4" class="active">Un nouvel espoir</span>
+                <span data-episode="5">L’empire contre-attaque</span>
+                <span data-episode="6">Le retour du Jedi</span>
+            </div>
+            <p class="descriptions">
+                <span data-episode="4" class="active">C'est le premier opus de la saga Star Wars par sa date de sortie, mais le quatrième selon l'ordre chronologique de l'histoire.</span>
+                <span data-episode="5">La guerre entre le maléfique Empire galactique et son antagoniste, l’Alliance rebelle, bat son plein.</span>
+                <span data-episode="6">Le maléfique Empire galactique construit une nouvelle station spatiale Étoile de la mort pour anéantir définitivement l'Alliance rebelle.</span>
+            </p>
+            <div class="dates">
+                19<span class="date ten"><span data-episode="4" class="active">7</span><span data-episode="5 6">8</span></span><span class="date unity"><span data-episode="4" class="active">7</span><span data-episode="5">0</span><span data-episode="6">3</span></span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="posters">
+                <img data-episode="4" class="active" src="assets/Resistance.png" alt="Resistance poster" />
+                <img data-episode="5" class="toRight" src="assets/Empire.png" alt="Resistance poster" />
+                <img data-episode="6" class="toRight" src="assets/Jedi.png" alt="Resistance poster" />
+            </div>
+        </div>
+    </div>
 
-<div class="hero">
-    <h1>Quick Parcel Project by Benjamin Code</h1>
-    <p class="description">
-        This is Benjamin Code's <a href="https://github.com/bdebon/quick-parcel-project" target="_blank">quick starter project</a> running on Parcel.js v1 to maximise compatibilities with codesandbox.
-    </p>
+    <nav>
+        <div class="arrows">
+            <span class="arrow left disable"><img src="assets/arrow.svg" alt="Left nagivation"></span>
+            <span class="arrow right"><img src="assets/arrow.svg" alt="Right nagivation"></span>
+        </div>
 
-</div>
+        <ul class="stepper">
+            <li data-episode="4" class="active"><div class="line">&nbsp;</div></li>
+            <li data-episode="5" class=""><div class="line">&nbsp;</div></li>
+            <li data-episode="6" class=""><div class="line">&nbsp;</div></li>
+        </ul>
+    </nav>
 
-
-<script type="module" src="src/index.ts"></script>
-
+    <script type="module" src="src/index.ts"></script>
 </body>
 </html>
