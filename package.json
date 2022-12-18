@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel -p 5678 index.html",
     "start-multiple-entries": "parcel index.html centered.html what.html ",
     "build": "parcel build index.html"
   },
